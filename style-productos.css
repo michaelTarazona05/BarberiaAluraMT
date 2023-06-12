@@ -1,0 +1,162 @@
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;  /*Propiedad de desplazamiento externo, 20px superior e inferior y 0 en los laterales*/
+}
+
+.caja{
+    width: 940px;   /*70% de la mayoría de las pantallas tienen una resolución de 1280px de formato*/
+    position: relative; /*respecto a la posición absoluta*/
+    margin: 0 auto;     /* 0 superior e inferior y auto en los bordes ya que se modifique en función al formato de la pantalla*/
+
+}
+
+nav{
+    position: absolute;
+    top: 110px;               /*Centralizar respecto al alto de la imagen (250px)*/
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;     /*Tiene 4 parametros, (espaciamiento interno hacia arriba, derecha, abajo, izquierda) */
+}
+
+nav a{
+    text-transform: uppercase;      /*Transformar las mayusculas*/
+    color: #000000;
+    font-weight: bold;              /*Negrilla*/
+    font-size: 22px;
+    text-decoration: none;          /*Quitar subrayado de los links*/
+}
+
+nav a:hover{                /*Propiedad para capturas los eventos del mouse*/
+    color: #C78C19;
+    text-decoration: underline; /*Propiedad para color el subrayado luego del evento del mouse*/
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;      /*Espaciamiento*/
+}
+
+.productos li{
+    display: inline-block;  /*Permite colocar los elementos en formato horizontal, uno al lado del otro y configurar espacios y propiedades de los elementos */
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    /* background: #CCCCCC; Para apoyarnos a visualizar la dimensión de los bordes  */
+    margin: 0 1.5%; /*0 en vertical y 1.5% en los horizontales*/
+    padding: 30px 20px;
+    box-sizing: border-box; /* Tamaño de la caja, borde de cada item sera el limite del espacio definido*/
+    border: 2px solid #000000; /*Propiedad de bordes parametros en orden (width style color)*/
+    border-radius: 10px;   /* Parametros (top-left top-right bottom-right bottom-left) */
+
+    /*border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    border-top-left-radius: 55px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 20px;*/
+}
+
+.productos li:hover{
+    border-color: #C78C19;
+}
+
+.productos li:active{       /*Propiedad que captura el click izq del mouse*/
+    border-color: #088C19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;  
+}
+
+.productos li:hover h2{     /*Propiedad que captura el movimiento del mouse cuando se encuentra en una etiqueta h2*/
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;  
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);  /*Propiedad bg ocupa la pantalla, el valor url es para la ubicación de una imagen*/
+    padding: 40px;      
+}
+
+.copyrigth{
+    color:white;
+    font-size: 13px;
+    margin: 20px;       /*espaciamiento externo*/
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{     /*mediante "," se replica la configuración*/       
+    display: block;     /*Label e input por padrón posee el display inline*/
+    font-size: 20px;
+    margin: 0 0 10px;   /* 0 Arriba 0 Derecha 10px Abajo*/    
+}
+
+/*form input, form textarea{  /*mediante "," se replica la configuración de los input para el textarea*/
+.input-padron{  /*Clase para poder referenciar y crear una caracteristica solo para estos input*/
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px; /*Espaciamiento interno superior y lateral*/
+    width: 50%; /*Que el ancho de los input ocupen el 50% de nuestro main*/
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /*propiedad para realizar la transición todas las caracteristicas al momento de activación o captura de evento*/
+    cursor: pointer; /*cambiar el cursor por la mano que apunta*/
+}
+
+.enviar:hover{  /*Propiedad que captura el evento del mouse en el selector de clase*/
+    background: darkorange;
+    transform: scale(1.2);  /*propiedad que transforma la escala del elemento al capturar el evento hover sobre el submit*/
+                            /*luego rota con la alteración rotate(70deg) al lado de scale de la misma propiedad transform"*/
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}

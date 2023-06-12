@@ -1,0 +1,125 @@
+<!DOCTYPE html>     <!--Definimos cuál versión de HTML estamos utilizando, en este caso HTML5 por la exclamación ! -->
+
+<html lang="es">    <!-- hmtl marca el contenido a ser renderizado en el navegador.
+                    Con la propiedad lang, se define el lenguaje, "es" junto a codificación "es-Es" (España); "es-418" (Español Latino)-->
+
+    <head>  <!--Colocar etiquetas informativas-->
+
+        <meta charset="UTF-8">  <!---con meta pasamos la información del encoding de nuestra página al navegador y con la propiedad charset habilitamos el diccionario que posee la mayoría de idiomas del mundo, en especial los que poseen caracteres especiales-->
+
+        <meta name="viewport" content="width=device-width"> <!--Elemento con ancho del dispositivo-->
+
+        <title>Barbería Alura</title>
+                                            <!-- Para todas las etiquetas <p> aplicar la propiedad de alineación
+        <style>
+            p{
+                text-align: center;   
+
+            }
+
+        </style>
+                                            --> 
+
+                                            <!--Referenciar el archivo CSS con la etiqueta link, luego relacionar con rel la hoja de estilo y su ubicación con un href-->
+        <link rel="stylesheet" href="reset.css/reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">                                            
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="caja">
+
+                <h1><img src="imagenes/logo.png"></h1>
+                <nav>   <!---Etiqueta para el panel de navegación-->
+    
+                    <ul>
+    
+                        <li><a href="inicial.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+        
+                    </ul>
+    
+                </nav>
+            </div>
+        </header>
+
+        <img class="banner" src="banner/banner.jpg">   <!--La etiqueta img no tiene cierre por ser de referencia para la imagen adjunta con la propiedad src-->
+
+        <main>
+
+            <section class="principal">
+
+                <h2 class="titulo-principal">Sobre la Barbería Alura</h2>   <!--Alteración del fondo del titulo con la propiedad background-->
+
+                <img class="utensilios" src="imagenes/utensilios[1].jpg" alt="Utensilios de un barbero">
+    
+                <p>Ubicada en el corazón de la ciudad, la <strong> Barbería Alura </strong> trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p>
+        
+                <p id="mision"> <em> Nuestra misión es: <strong> "Proporcionar autoestima y calidad de vida a nuestros clientes".</strong></em></p>
+        
+                <!---Se crea un selector de identificación con id-->
+        
+                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes.</p>
+    
+            </section>
+
+            <section class="mapa">
+
+                <h3 class="titulo-principal">Nuestra ubicación</h3>
+                <p>Nuestro establecimiento esta ubicado en el corazón de la ciudad</p>
+
+                <div class="mapa-contenido">
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!3m2!1ses-419!2sco!4v1685218666371!5m2!1ses-419!2sco!6m8!1m7!1sGMAOfSoZuCQM8JdsED6AYw!2m2!1d6.310697188399498!2d-75.56635166684754!3f279.2967758841394!4f17.682173794258603!5f1.8785818501045135" width="40%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1178.9918651332914!2d-75.56639157475412!3d6.310917603039557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1685217404678!5m2!1ses-419!2sco" width="59%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <!--iframe sirve para insertar diferentes elementos externos como ser imágenes, videos, mapas o hasta una página de facebook o twitter.-->
+
+                </div>
+
+            </section>
+    
+            <section class="diferenciales">
+    
+                <h3 class="titulo-principal">Diferenciales</h3>
+
+                <div class="contenido-diferenciales">
+
+                    <ul class="lista-diferenciales">
+                        <li class="items">Atención personalizada a los clientes</li>    <!---Se Crea clase referenciadas para funciones especificas-->
+                        <li class="items">Espacio diferenciado</li>
+                        <li class="items">Localización</li>
+                        <li class="items">Profesionales calificados</li>
+                        <li class="items">Puntualidad</li>
+                        <li class="items">Limpieza</li>
+            
+                    </ul><img src="diferenciales/diferenciales.jpg" class="imagen-diferenciales"> <!--Se debe pegar img junto con el cierre de la lista para el ajuste de la propiedad display en el CSS-->
+
+                </div>
+
+                <div class="video">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+    
+            </section>
+
+        </main>
+
+
+
+        <footer>    <!---Pie de pagina-->
+
+            <img src="imagenes/logo-blanco.png">
+            <p class="copyrigth">&copy Copyrigth Barbería Alura - 2023</p>  <!---(Sybolo Entidad Unicode para ©--> 
+
+        </footer>
+
+
+    </body>
+
+</html>

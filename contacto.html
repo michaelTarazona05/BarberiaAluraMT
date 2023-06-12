@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"> <!--Elemento con ancho del dispositivo-->
+        <title>Contacto - Barbería Alura</title>
+        <link rel="stylesheet" href="reset.css/reset.css"> <!--Quitar los estilos que el navegador crea automáticamente con el reset.css-->
+        <link rel="stylesheet" href="style.css">    <!--propiedad rel = relacionamiento hola de estilo productos.css-->
+    </head>
+
+    <body>
+        <header>
+
+            <div class="caja">
+
+                <h1><img src="imagenes/logo.png" alt="Logo Barbería Alura"></h1>   <!--alt etiqueta la imagen cuando no carga-->
+                <nav>   <!---Etiqueta para el panel de navegación-->
+    
+                    <ul>
+    
+                        <li><a href="inicial.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+        
+                    </ul>
+    
+                </nav>
+            </div>
+        </header>
+
+        <main>      
+            <form>   <!---Etiqueta de formulario-->
+                <label for="nombreapellido">Nombre y Apellido</label> <!---Descripción para identificar con texbox-->               
+                <input type="text" id="nombreapellido" class="input-padron" required> <!---textbox ingresar información, el id es para relacionar con el label-->
+                <label for="correoelectronico">Correo Electrónico</label> 
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com"> <!--Se crea clase para los input para poder referenciar y crear una caracteristica solo para estos input-->
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX"> <!--required vuelve el campo obligatorio, placeholder visualiza guía del formato para el usuario-->
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>   <!--Caja de manipulación de área-->
+
+                <fieldset>   <!--Sección de radio button-->
+
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>  <!--legend permite realizar titulo dentro del fieldset-->
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label> <!--Primer elemento-->
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label> <!--Propiedad name agrupa todoso los elementos dando el mismo apellido por lo que solo se podría seleccionar uno de estos elementos al tiempo-->
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label> <!--Al concatenar la etiqueta "input" dentro de los "label" se puede visualizar el radio button antes que el contenido label-->
+                    
+                </fieldset>
+
+                <fieldset>  <!--Para agrupar los items que pertenecen a la misma información o están relacionados-->
+                    <legend>¿En cúal horario prefiere ser atentido?</legend>
+                    <select>    <!--la etiqueta <select> está compuesta de uno o más <option>-->
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset  >
+
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería Alura?</label> <!--checked genera la activación por defecto del campo seleccionado-->
+                
+                <input type="submit" value="Enviar formulario" class="enviar">
+
+            </form>
+
+            <table> 
+
+                <thead> <!--thead son etiquetas especificas el rotulo del encabezados de tablas se centraliza-->
+                    <tr>    <!--Table rows son las lineas de las tablas-->
+                        <th>Día</th> <!--th son etiquetas especificas para contenido de encabezados de tablas-->
+                        <th>Horario</th>
+                    </tr>   
+                </thead>
+
+                <tbody> <!--Semantica para el cuerpo de las tablas-->
+                    <tr>
+                        <td>Lunes</td>  <!--Table date son las celdas con datos de las tablas-->
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>08h ~ 20h</td>
+                    </tr>
+                </tbody>
+
+
+
+            </table>
+
+        </main>
+
+        <footer>    <!---Pie de pagina-->
+
+            <img src="imagenes/logo-blanco.png" alt="Logo Barbería Alura">
+            <p class="copyrigth">&copy Copyrigth Barbería Alura - 2023</p>  <!---Sybolo Entidad Unicode para ©--> 
+
+        </footer>
+    </body>
+</html>

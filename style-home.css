@@ -1,0 +1,62 @@
+/* Selector p y selector body, se debe respetar la jerarquía de la etiqueta */
+/*rgb(0,0,0); r=red g=green b=blue; 0=menor y 256=max*/
+
+.titulo_principal{
+
+    padding-left: 30px;     /*espaciamiento interno hacia la izquierda*/
+
+}
+
+#banner{
+    width: 100%;
+}
+
+.principal{
+
+    background: #CCCCCC;    /*Representación #HEX de los colores*/
+    padding: 20px;
+}
+
+.titulo_centralizado{
+
+    text-align: center;
+
+}
+
+p{
+    text-align: center;   
+    /*background: #CCCCCC;*/
+}
+
+
+em strong{      /*Combinación de selectores para ser más especificos */
+    color: red; 
+}
+
+#mision{                /*el selector de identificación se relaciona con el # */
+    font-size: 20px;
+
+}
+
+.diferenciales{
+    background: #FFFFFF;
+    padding: 30px;             /*Propiedad para ajustar*/
+}
+
+.items{                     /*Las clases se relacionan con el . */
+    font-style: italic;      /*El estilo indice o italico similar al em de html pero para CSS*/
+
+}
+
+ul{                           /*Listas tienen propiedades por defecto de ocupar todo el ancho del parrafo y alinearse con el bloque inferior*/
+
+    display: inline-block;      /*comportamientos inline y block*/
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+.imagendiferenciales{
+    width: 50%;
+
+}
